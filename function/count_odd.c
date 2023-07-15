@@ -1,17 +1,8 @@
 #include <stdio.h>
 
-int count_odd(){
+int count_odd(int a[], int n){
     
-    int i, n, count=0;
-    int a[10];
-    
-    scanf("%d", &n);
-    
-    for(i=0; i<n; i++)
-    {
-        scanf("%d", &a[i]);
-
-    }
+    int i, count=0;
     
     for(i=0; i<n; i++)
     {
@@ -27,8 +18,16 @@ int count_odd(){
 int main()
 {
      
-    int c, m;
-    int res = count_odd(c, m);
+    int a[10];
+    int n;
+    
+    scanf("%d", &n);
+    
+    for(int i=0; i<n; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    int res = count_odd(a, n);
     printf("%d", res);
     
     
